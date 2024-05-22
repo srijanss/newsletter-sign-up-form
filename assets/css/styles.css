@@ -1,0 +1,27 @@
+@import "./_css_reset.css";
+@import "./_mixins.css";
+@import "./_fonts.css";
+
+:root {
+  --color-primary: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 295, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --default-font-size: 16px;
+  --font-family-regular: "Roboto-Regular", sans-serif;
+  --font-family-bold: "Roboto-Bold", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-regular);
+  font-size: var(--default-font-size);
+  color: var(--charcoal-grey);
+  background-color: var(--white);
+}
