@@ -58,19 +58,27 @@
             <li>Measuring to ensure updates are a success</li>
             <li>And much more!</li>
           </ul>
-          <form action="" method="post" class="card__form" novalidate>
-            <label for="email">
-              <span class="label-text">Email address</span>
-              <span class="error" aria-live="polite">Valid email required</span>
-            </label>
-            <input
-              type="email"
-              class="card__form__input"
-              id="email"
-              name="email"
-              placeholder="email@company.com"
-              required
-            />
+          <form
+            action=""
+            method="post"
+            id="sign-up-form"
+            class="card__form"
+            novalidate
+          >
+            <div class="card__form__group card__form__group--email">
+              <label for="email">
+                <span class="label-text">Email address</span>
+                <span class="error" aria-live="polite"></span>
+              </label>
+              <input
+                type="email"
+                class="card__form__input"
+                id="email"
+                name="email"
+                placeholder="email@company.com"
+                required
+              />
+            </div>
             <button class="card__form__submit-btn" type="submit">
               Subscribe to monthly newsletter
             </button>
@@ -92,8 +100,10 @@
         <h2 class="card__success-heading">Thanks for subscribing!</h2>
         <p class="card__success-description">
           A confirmation email has been sent to
-          <strong>ash@loremcompany.com</strong>. Please open it and click the
-          button inside to confirm your subscription.
+          <strong class="card__success__recipient-email"
+            >ash@loremcompany.com</strong
+          >. Please open it and click the button inside to confirm your
+          subscription.
         </p>
         <button class="card__success__dismiss-btn" type="button">
           Dismiss message

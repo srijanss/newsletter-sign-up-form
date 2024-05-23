@@ -140,7 +140,7 @@ main {
       &::placeholder {
         color: var(--grey);
       }
-      &:focus:invalid {
+      &.invalid {
         border: 1px solid var(--color-primary);
         background-color: var(--color-primary-15);
         color: var(--color-primary);
@@ -180,7 +180,9 @@ main {
   width: 375px;
   margin: 0 auto;
   padding: 149px 24px 40px;
-  transform: scaleY(1);
+  tranform-origin: bottom center;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
   & h2 {
     @mixin heading-style;
     margin-top: 40px;
@@ -206,9 +208,7 @@ main {
     height: 0;
     padding: 0;
     margin: 0;
-    tranform-origin: bottom center;
-    transform: scaleY(0);
-    transition: transform 0.3s ease-in-out;
+    transform: scale(0);
   }
 }
 
