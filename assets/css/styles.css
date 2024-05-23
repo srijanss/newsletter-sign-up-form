@@ -25,3 +25,9 @@ body {
   color: var(--charcoal-grey);
   background-color: var(--white);
 }
+
+img {
+  max-inline-size: 100%;
+  object-fit: contain;
+  object-position: center;
+}

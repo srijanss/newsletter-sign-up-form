@@ -34,18 +34,90 @@
   </head>
   <body>
     <main>
-      Stay updated! Join 60,000+ product managers receiving monthly updates on:
-      Product discovery and building what matters Measuring to ensure updates
-      are a success And much more! Email address email@company.com Subscribe to
-      monthly newsletter
+      <div class="card">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="Illustration sign up"
+            width="375"
+            height="284"
+            class="card__img"
+          />
+        </picture>
+        <section class="card__content">
+          <h1 class="card__heading">Stay updated!</h1>
+          <p class="card__info">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="card__info-items">
+            <li>
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                width="21"
+                height="21"
+              />
+              <p>Product discovery and building what matters</p>
+            </li>
+            <li>
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                width="21"
+                height="21"
+              />
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+            <li>
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                width="21"
+                height="21"
+              />
+              <p>And much more!</p>
+            </li>
+          </ul>
+          <form action="" method="post" novalidate>
+            <label for="email">
+              <span class="label">Email address</span>
+              <span class="error">Valid email required</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@company.com"
+              required
+            />
+            <button type="submit">Subscribe to monthly newsletter</button>
+          </form>
+        </section>
+      </div>
 
       <!-- Sign-up form end -->
 
       <!-- Success message start -->
-
-      Thanks for subscribing! A confirmation email has been sent to
-      ash@loremcompany.com. Please open it and click the button inside to
-      confirm your subscription. Dismiss message
+      <section class="card__success">
+        <img
+          src="./assets/images/icon-success.svg"
+          alt="Subscription success"
+          width="64"
+          height="64"
+          class="card__success-img"
+        />
+        <h2 class="card__success-heading">Thanks for subscribing!</h2>
+        <p class="card__success-description">
+          A confirmation email has been sent to
+          <strong>ash@loremcompany.com</strong>. Please open it and click the
+          button inside to confirm your subscription.
+        </p>
+        <button type="button">Dismiss message</button>
+      </section>
 
       <!-- Success message end -->
     </main>
