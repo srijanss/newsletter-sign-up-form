@@ -3,3 +3,9 @@
     @mixin-content;
   }
 }
+@define-mixin heading-style {
+  font-family: var(--font-family-bold);
+  font-size: 40px;
+  line-height: 1;
+  color: var(--dark-slate-grey);
+}
